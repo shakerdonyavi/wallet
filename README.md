@@ -9,6 +9,7 @@ The Spring Boot based Application for manage customers and transactions of their
 - UI
 - Project Architecture
 - API Reference
+- Future Improvement
 - Authors
 - Social Media Links
 
@@ -53,7 +54,7 @@ This project utilizes a microservices architecture with service registration and
 
 - **Description:** Responsible for creating and getting list of transactions for each account.
 - **Endpoint:** http://localhost:8082
-- **Interaction:** Communicates with other microservices and is discoverable through Eureka.
+- **Interaction:** Communicates with Account microservice and is discoverable through Eureka.
 
 ### Account Service
 
@@ -66,6 +67,10 @@ This project utilizes a microservices architecture with service registration and
 
 Swagger dependency is configured for account service.
 After launching the project you can see it on http://localhost:8081/swagger-ui.html
+
+## Future Improvement
+1. implement integration test with test container
+2. create a project for configuration management
 
 ## Authors
 

@@ -1,0 +1,74 @@
+version: "3"
+networks:
+  eureka-network:
+    driver: bridge
+services:
+  eureka-server:
+    container_name: 'eureka'
+    image: openjdk:17
+    ports:
+      - "8761:8761"
+    command: java -jar /app/eureka-server.jar
+    volumes:
+      - ./eureka-server/target/eureka-server-1.0.0.jar:/app/eureka-server.jar
+    networks:
+      - eureka-network
+  eureka-transaction-client:
+    depends_on:
+      - postgres_db
+      - eureka-server
+    image: openjdk:17
+    ports:
+      - "8082:8082"
+    command: java -jar /app/eureka-transaction-client.jar
+    volumes:
+      - ./transaction-service/target/transaction-service-1.0.0.jar:/app/eureka-transaction-client.jar
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=13681368
+      - EUREKA.CLIENT.SERVICEURL.DEFAULTZONE=http://EUREKA-SERVER:8761/eureka/
+    networks:
+      - eureka-network
+  eureka-account-client:
+    container_name: 'account'
+    depends_on:
+      - postgres_db
+      - eureka-server
+      - eureka-transaction-client
+    image: openjdk:17
+    ports:
+      - "8081:8081"
+    command: java -jar /app/eureka-account-client.jar
+    volumes:
+      - ./account-service/target/account-service-1.0.0.jar:/app/eureka-account-client.jar
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres_db:5432/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=13681368
+      - EUREKA.CLIENT.SERVICEURL.DEFAULTZONE=http://EUREKA-SERVER:8761/eureka/
+    networks:
+      - eureka-network
+  ui:
+    depends_on:
+      - eureka-account-client
+    image: openjdk:17
+    ports:
+      - "8080:8080"
+    command: java -jar /app/ui.jar
+    volumes:
+      - ./ui/target/ui-1.0.0.jar:/app/ui.jar
+    environment:
+      - ACCOUNT.SERVER.URL=http://EUREKA-ACCOUNT-CLIENT:8081
+    networks:
+      - eureka-network
+  postgres_db:
+    image: "postgres:latest"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 13681368
+    ports:
+      - "5432:5432"
+    networks:
+      - eureka-network
+

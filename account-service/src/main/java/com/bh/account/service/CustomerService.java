@@ -22,9 +22,19 @@ public class CustomerService {
     private final CustomerMapper customerMapper;
 
     public CustomerResponse createCustomer(CustomerRequest customerRequest) {
+        validateRequest(customerRequest);
         CustomerEntity customerEntity = customerMapper.convertRequestToEntity(customerRequest);
         customerEntity = customerRepository.save(customerEntity);
         return customerMapper.convertEntityToResponse(customerEntity);
+    }
+
+    private void validateRequest(CustomerRequest customerRequest) {
+        if (customerRequest.name() == null || customerRequest.name().trim().isEmpty()) {
+            throw new BusinessException(ErrorCode.CUSTOMER_NAME_IS_EMPTY);
+        }
+        if (customerRequest.surname() == null || customerRequest.surname().trim().isEmpty()) {
+            throw new BusinessException(ErrorCode.CUSTOMER_SURNAME_IS_EMPTY);
+        }
     }
 
     public List<CustomerResponse> getCustomers() {

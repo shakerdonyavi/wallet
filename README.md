@@ -28,6 +28,11 @@ For run this project, you must install docker first and after that doing flowing
 
 - Build Artifact with maven
 - run with docker compose with command docker-compose up -d
+- To run the project without Docker Compose, ensure you start the individual projects in the specified order.
+  - eureka-server
+  - transaction-service
+  - account-service
+  - ui
 
 ## UI
 

@@ -1,0 +1,39 @@
+name: Build, Test, and Deploy to Docker Hub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+
+      - name: Build and Dockerize
+        run: |
+          mvn -B clean install
+          docker build -t mshakerdonyavi/eureka-server eureka-server/
+          docker build -t mshakerdonyavi/transaction-service transaction-service/
+          docker build -t mshakerdonyavi/account-service account-service/
+          docker build -t mshakerdonyavi/ui ui/
+
+      - name: Push to Docker Hub
+        run: |
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+          docker push mshakerdonyavi/eureka-server
+          docker push mshakerdonyavi/transaction-service
+          docker push mshakerdonyavi/account-service
+          docker push mshakerdonyavi/ui
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}

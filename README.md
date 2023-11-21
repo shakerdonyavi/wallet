@@ -79,7 +79,6 @@ After launching the project you can see it on http://localhost:8081/swagger-ui.h
 ## Future Improvement
 
 1. create a project for configuration management
-2. config CI/CD 
 
 ## Authors
 

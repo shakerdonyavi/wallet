@@ -20,12 +20,13 @@ The Spring Boot based Application for manage customers and transactions of their
 - Maven
 - Postgres DB
 - Thymeleaf
+- testContainer
 
 ## Run And Deployment
 
 For run this project, you must install docker first and after that doing flowing steps.
 
-- Build Artifact with maven .
+- Build Artifact with maven
 - run with docker compose with command docker-compose up -d
 
 ## UI
@@ -72,8 +73,8 @@ After launching the project you can see it on http://localhost:8081/swagger-ui.h
 
 ## Future Improvement
 
-1. implement integration test with test container
-2. create a project for configuration management
+1. create a project for configuration management
+2. config CI/CD 
 
 ## Authors
 

@@ -1,53 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2024-01-08T18:33:19.271Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="sNFwFRwv3e05Qa7vOYqW" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T09:48:39.768Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="ZvyO78M9haVqXEohBl5m" version="22.1.17" type="github">
   <diagram name="Page-1" id="5f0bae14-7c28-e335-631c-24af17079c00">
-    <mxGraphModel dx="954" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2357" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2WP415lt9PAcQUyVR7Ey-2" target="2WP415lt9PAcQUyVR7Ey-9">
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="2WP415lt9PAcQUyVR7Ey-2" target="2WP415lt9PAcQUyVR7Ey-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-2" value="Application" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="158" y="50" width="770" height="290" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-2" value="Application" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="190" y="170" width="910" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-1" value="customer-request-tracker" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="100" width="212" height="50" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-1" value="customer-request-tracker" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="332" y="360" width="212" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-6" value="identity-and-access-management&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="168" y="100" width="222" height="50" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-6" value="identity-and-access-management&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="190" width="222" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-7" value="commons" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="168" y="170" width="222" height="50" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-7" value="commons" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="340" width="222" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-8" value="notification&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="168" y="240" width="222" height="50" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-8" value="notification&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="260" width="222" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-9" value="RDBMS" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="472.5" y="420" width="141" height="130" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-9" value="RDBMS" style="shape=datastore;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="574.5" y="560" width="141" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-13" value="payment-service&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="420" y="170" width="212" height="50" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-13" value="payment-service&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="332" y="280" width="212" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-14" value="middle-east-bank" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="70" width="212" height="30" as="geometry" />
+        <mxCell id="2WP415lt9PAcQUyVR7Ey-14" value="bank-connectors(authentication-api-signature-request,response-errorHandling)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="830" y="230" width="212" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-15" value="melli-bank" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="106" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-1" value="customer-request-handler&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332" y="190" width="212" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-16" value="mellat-bank" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="144" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kSGQJcxjAdLuOIr_GdK9-2" target="kSGQJcxjAdLuOIr_GdK9-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="50" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-17" value="tejarat-bank&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="183" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-18" value="sepah-bank" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="222" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-5" value="legacy systems for accounting force us to seperate the logic of gathering customer withdrawl requests from other part of system" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="60" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-19" value="pasargad-bank" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="260" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-6" value="transfer_item" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="200" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="2WP415lt9PAcQUyVR7Ey-20" value="saderat-bank&lt;br&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="297" width="212" height="30" as="geometry" />
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-8" value="the complexity of manual method and heterogeneity open banking APIs force us to seperate the payment process from other concerns in order to provide a unified experience for users of the system regardless of the bank they choose&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="280" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kSGQJcxjAdLuOIr_GdK9-10" value="reliability is important in financial systems and in order to keep the integrity of accounting system we had to make sure that transfer is actually done here we also had to complexity of bank APIs&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="240" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
